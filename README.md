@@ -36,14 +36,22 @@ http://butunclebob.com/files/downloads/Bowling%20Game%20Kata.ppt
 
 ### JUnit 5  
 Investigate JUnit 5 (Jupiter). Explain the following, and how they are useful.  
-* @tag
-* @Disabled
-* @RepeatedTest
-* @BeforeEach, @AfterEach
-* @BeforeAll, @AfterAll
-* @DisplayName
-* @Nested
-* assumeFalse, assumeTrue
+* @tag\
+&emsp;Bliver brugt til at gruppere test klasser/metoder der skal eksekveres i en given test plan.
+* @Disabled\
+&emsp;Disabled bliver brugt til at angive at en given test klasse/metode ikke skal eksekveres.
+* @RepeatedTest\
+&emsp;Repeated test bliver brugt til at annotere at en given metode er en test-skabelon
+* @BeforeEach, @AfterEach\
+&emsp;Before og after each bruges til at annotere metoder der enten skal køres lige før, eller lige efter hver enkelt test i den test klasse
+* @BeforeAll, @AfterAll\
+&emsp;Before/After all annotere metoder der skal køres enten først eller sidst i en test klasse
+* @DisplayName\
+&emsp;Display name giver et brugerdefineret navn til en given test klasse/metode i stedet for metodens/klassens navn.
+* @Nested\
+&emsp;Nested annotere at den givne klasse er nested inden i en anden test klasse og kan derfor dele setup med omsluttende klasse.
+* assumeFalse, assumeTrue\
+&emsp;Assumptions fungere meget som Assertions da de tjekker om en given variable opfylder en given condition. Forskellen er dog at en fejlet Assumption ikke leder til en fejlet test, men at testen i stedet bliver aborted.
 
 ### Mocking Frameworks  
 Investigate mocking frameworks for your preferred language. Choose at least two
