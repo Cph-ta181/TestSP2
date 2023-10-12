@@ -35,7 +35,7 @@ http://butunclebob.com/files/downloads/Bowling%20Game%20Kata.ppt
 ## Investigation Of Tools  
 
 ### JUnit 5  
-Investigate JUnit 5 (Jupiter). Explain the following, and how they are useful.  
+Investigate JUnit 5.
 * @tag\
 &emsp;Bliver brugt til at gruppere test klasser/metoder der skal eksekveres i en given test plan.
 * @Disabled\
@@ -54,8 +54,13 @@ Investigate JUnit 5 (Jupiter). Explain the following, and how they are useful.
 &emsp;Assumptions fungere meget som Assertions da de tjekker om en given variable opfylder en given condition. Forskellen er dog at en fejlet Assumption ikke leder til en fejlet test, men at testen i stedet bliver aborted.
 
 ### Mocking Frameworks  
-Investigate mocking frameworks for your preferred language. Choose at least two
-frameworks, and answer the questions. (One could be Mockito, which we saw in class.)  
-* What are their similarities?
-* What are their differences?
-* Which one would you prefer, if any, and why?
+#### Mockito vs. EasyMock
+* What are their similarities?\
+  Begge frameworks opfylder samme behov og har i stor stil de samme funktionaliteter.
+* What are their differences?\
+  Easymock har en mere consistent opbygning hvilket leder til mere ens-struktureret tests.
+  Flere af de mere advancerede mocking funktionaliteter er besværligere i EasyMock og kræver generelt en del mere kode.
+  I EasyMock skal et Mock replayes hver gang en Mock skal bruges.
+  I Mockito kan man lave et partial mock ved at kalde .thenCallRealMethod() i en mock. I EasyMock er dette sværre da man opbygger et partial mock ved at definere hvilke metoder der skal mockes og hvilke der ikke skal.
+* Which one would you prefer, if any, and why?\
+  Da begge frameworks opfylder alle mocking behov er det ikke funktionaliteten der seperere dem. Generelt virker det dog som om at Mockito er lettere at bruge og der ud over er Mockito mere brugt og har derfor et større community hvor hjælp kan findes. Derfor ville jeg fortrække Mockito.
