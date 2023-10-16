@@ -9,7 +9,8 @@ Perform unit test on each individual component like each button, scroll wheel, a
 Then a integration test to test if the components are working as expectet in conjunction.
 
 ### 1.2 Catastrophic Failure  
-Find a story where a software system defect had a bad outcome. Describe what happened. Can you find a test that would have prevented it?  
+Find a story where a software system defect had a bad outcome. Describe what happened. Can you find a test that would have prevented it? 
+Therac-25 var en computer styret maskine til at styre dosis strålebehandling. En fejl der opstod når operatøren skiftede mellem valg af 2 typer stråling for hurtigt var skyld i at 6 personer mistede livet til en overdosis af stråling. Denne fejl opstod pga. race conditions i det fler-tråede software. Problemet ville nok være svært at forhindre bare ved hjælp af en specifik test-metode. Men der findes software til at hjælpe med at identificere potientielle race conditions.
 
 ## Two Katas  
 ### String Utility  
